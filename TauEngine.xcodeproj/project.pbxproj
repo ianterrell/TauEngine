@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CCDBD171472C7520008AC62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCDBD161472C7520008AC62 /* Foundation.framework */; };
+		3CCDBD251472C7520008AC62 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCDBD241472C7520008AC62 /* SenTestingKit.framework */; };
+		3CCDBD271472C7520008AC62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCDBD261472C7520008AC62 /* UIKit.framework */; };
+		3CCDBD281472C7520008AC62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCDBD161472C7520008AC62 /* Foundation.framework */; };
+		3CCDBD2B1472C7520008AC62 /* libTauEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCDBD131472C7520008AC62 /* libTauEngine.a */; };
+		3CCDBD311472C7520008AC62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CCDBD2F1472C7520008AC62 /* InfoPlist.strings */; };
+		3CCDBD341472C7520008AC62 /* TauEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD331472C7520008AC62 /* TauEngineTests.m */; };
+		3CCDBD691472C7C90008AC62 /* TauEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD3D1472C7C90008AC62 /* TauEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD6A1472C7C90008AC62 /* TauEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD3E1472C7C90008AC62 /* TauEngine.m */; };
+		3CCDBD6B1472C7C90008AC62 /* TENode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD3F1472C7C90008AC62 /* TENode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD6C1472C7C90008AC62 /* TENode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD401472C7C90008AC62 /* TENode.m */; };
+		3CCDBD6D1472C7C90008AC62 /* TEButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD411472C7C90008AC62 /* TEButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD6E1472C7C90008AC62 /* TEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD421472C7C90008AC62 /* TEButton.m */; };
+		3CCDBD6F1472C7C90008AC62 /* TENodeLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD431472C7C90008AC62 /* TENodeLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD701472C7C90008AC62 /* TENodeLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD441472C7C90008AC62 /* TENodeLoader.m */; };
+		3CCDBD711472C7C90008AC62 /* TEDrawable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD451472C7C90008AC62 /* TEDrawable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD721472C7C90008AC62 /* TEDrawable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD461472C7C90008AC62 /* TEDrawable.m */; };
+		3CCDBD731472C7C90008AC62 /* TEAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD471472C7C90008AC62 /* TEAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD741472C7C90008AC62 /* TEAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD481472C7C90008AC62 /* TEAnimation.m */; };
+		3CCDBD751472C7C90008AC62 /* TEScaleAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD491472C7C90008AC62 /* TEScaleAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD761472C7C90008AC62 /* TEScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD4A1472C7C90008AC62 /* TEScaleAnimation.m */; };
+		3CCDBD771472C7C90008AC62 /* TERotateAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD4B1472C7C90008AC62 /* TERotateAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD781472C7C90008AC62 /* TERotateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD4C1472C7C90008AC62 /* TERotateAnimation.m */; };
+		3CCDBD791472C7C90008AC62 /* TETranslateAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD4D1472C7C90008AC62 /* TETranslateAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD7A1472C7C90008AC62 /* TETranslateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD4E1472C7C90008AC62 /* TETranslateAnimation.m */; };
+		3CCDBD7B1472C7C90008AC62 /* TEColorAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD4F1472C7C90008AC62 /* TEColorAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD7C1472C7C90008AC62 /* TEColorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD501472C7C90008AC62 /* TEColorAnimation.m */; };
+		3CCDBD7D1472C7C90008AC62 /* TEVertexColorAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD511472C7C90008AC62 /* TEVertexColorAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD7E1472C7C90008AC62 /* TEVertexColorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD521472C7C90008AC62 /* TEVertexColorAnimation.m */; };
+		3CCDBD7F1472C7C90008AC62 /* TECollisionDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD531472C7C90008AC62 /* TECollisionDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD801472C7C90008AC62 /* TECollisionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD541472C7C90008AC62 /* TECollisionDetector.m */; };
+		3CCDBD811472C7C90008AC62 /* TECollisionDetectorTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD551472C7C90008AC62 /* TECollisionDetectorTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD821472C7C90008AC62 /* TECollisionDetectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD561472C7C90008AC62 /* TECollisionDetectorTest.m */; };
+		3CCDBD831472C7C90008AC62 /* TESceneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD571472C7C90008AC62 /* TESceneController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD841472C7C90008AC62 /* TESceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD581472C7C90008AC62 /* TESceneController.m */; };
+		3CCDBD851472C7C90008AC62 /* TEScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD591472C7C90008AC62 /* TEScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD861472C7C90008AC62 /* TEScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD5A1472C7C90008AC62 /* TEScene.m */; };
+		3CCDBD871472C7C90008AC62 /* TEMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD5B1472C7C90008AC62 /* TEMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD881472C7C90008AC62 /* TEMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD5C1472C7C90008AC62 /* TEMenu.m */; };
+		3CCDBD891472C7C90008AC62 /* TEAccelerometer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD5D1472C7C90008AC62 /* TEAccelerometer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD8A1472C7C90008AC62 /* TEAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD5E1472C7C90008AC62 /* TEAccelerometer.m */; };
+		3CCDBD8B1472C7C90008AC62 /* TESoundManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD5F1472C7C90008AC62 /* TESoundManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD8C1472C7C90008AC62 /* TESoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD601472C7C90008AC62 /* TESoundManager.m */; };
+		3CCDBD8D1472C7C90008AC62 /* TERandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD611472C7C90008AC62 /* TERandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD8E1472C7C90008AC62 /* TERandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD621472C7C90008AC62 /* TERandom.m */; };
+		3CCDBD8F1472C7C90008AC62 /* TEShuffleBag.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD631472C7C90008AC62 /* TEShuffleBag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD901472C7C90008AC62 /* TEShuffleBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD641472C7C90008AC62 /* TEShuffleBag.m */; };
+		3CCDBD911472C7C90008AC62 /* TEImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD651472C7C90008AC62 /* TEImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD921472C7C90008AC62 /* TEImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD661472C7C90008AC62 /* TEImage.m */; };
+		3CCDBD931472C7C90008AC62 /* TETexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD671472C7C90008AC62 /* TETexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBD941472C7C90008AC62 /* TETexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD681472C7C90008AC62 /* TETexture.m */; };
+		3CCDBDAC1472C8090008AC62 /* TEShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD981472C8090008AC62 /* TEShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDAD1472C8090008AC62 /* TEShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD991472C8090008AC62 /* TEShape.m */; };
+		3CCDBDAE1472C8090008AC62 /* TEPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD9A1472C8090008AC62 /* TEPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDAF1472C8090008AC62 /* TEPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD9B1472C8090008AC62 /* TEPolygon.m */; };
+		3CCDBDB01472C8090008AC62 /* TETriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD9C1472C8090008AC62 /* TETriangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDB11472C8090008AC62 /* TETriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD9D1472C8090008AC62 /* TETriangle.m */; };
+		3CCDBDB21472C8090008AC62 /* TERectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD9E1472C8090008AC62 /* TERectangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDB31472C8090008AC62 /* TERectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD9F1472C8090008AC62 /* TERectangle.m */; };
+		3CCDBDB41472C8090008AC62 /* TERegularPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBDA01472C8090008AC62 /* TERegularPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDB51472C8090008AC62 /* TERegularPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBDA11472C8090008AC62 /* TERegularPolygon.m */; };
+		3CCDBDB61472C8090008AC62 /* TERandomPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBDA21472C8090008AC62 /* TERandomPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDB71472C8090008AC62 /* TERandomPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBDA31472C8090008AC62 /* TERandomPolygon.m */; };
+		3CCDBDB81472C8090008AC62 /* TEHexagon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBDA41472C8090008AC62 /* TEHexagon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDB91472C8090008AC62 /* TEHexagon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBDA51472C8090008AC62 /* TEHexagon.m */; };
+		3CCDBDBA1472C8090008AC62 /* TEHeptagon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBDA61472C8090008AC62 /* TEHeptagon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDBB1472C8090008AC62 /* TEHeptagon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBDA71472C8090008AC62 /* TEHeptagon.m */; };
+		3CCDBDBC1472C8090008AC62 /* TEOctagon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBDA81472C8090008AC62 /* TEOctagon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDBD1472C8090008AC62 /* TEOctagon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBDA91472C8090008AC62 /* TEOctagon.m */; };
+		3CCDBDBE1472C8090008AC62 /* TEEllipse.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBDAA1472C8090008AC62 /* TEEllipse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDBF1472C8090008AC62 /* TEEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBDAB1472C8090008AC62 /* TEEllipse.m */; };
+		3CCDBDC31472C8210008AC62 /* TENumberDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBDC11472C8210008AC62 /* TENumberDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDC41472C8210008AC62 /* TENumberDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBDC21472C8210008AC62 /* TENumberDisplay.m */; };
+		3CCDBDC81472C8340008AC62 /* TESprite.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBDC61472C8340008AC62 /* TESprite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCDBDC91472C8340008AC62 /* TESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBDC71472C8340008AC62 /* TESprite.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CCDBD291472C7520008AC62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CCDBD0A1472C7520008AC62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCDBD121472C7520008AC62;
+			remoteInfo = TauEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CCDBD131472C7520008AC62 /* libTauEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTauEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCDBD161472C7520008AC62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CCDBD1A1472C7520008AC62 /* TauEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TauEngine-Prefix.pch"; sourceTree = "<group>"; };
+		3CCDBD231472C7520008AC62 /* TauEngineTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TauEngineTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCDBD241472C7520008AC62 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CCDBD261472C7520008AC62 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CCDBD2E1472C7520008AC62 /* TauEngineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TauEngineTests-Info.plist"; sourceTree = "<group>"; };
+		3CCDBD301472C7520008AC62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CCDBD321472C7520008AC62 /* TauEngineTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TauEngineTests.h; sourceTree = "<group>"; };
+		3CCDBD331472C7520008AC62 /* TauEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TauEngineTests.m; sourceTree = "<group>"; };
+		3CCDBD3D1472C7C90008AC62 /* TauEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TauEngine.h; sourceTree = "<group>"; };
+		3CCDBD3E1472C7C90008AC62 /* TauEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TauEngine.m; sourceTree = "<group>"; };
+		3CCDBD3F1472C7C90008AC62 /* TENode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TENode.h; sourceTree = "<group>"; };
+		3CCDBD401472C7C90008AC62 /* TENode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TENode.m; sourceTree = "<group>"; };
+		3CCDBD411472C7C90008AC62 /* TEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEButton.h; sourceTree = "<group>"; };
+		3CCDBD421472C7C90008AC62 /* TEButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEButton.m; sourceTree = "<group>"; };
+		3CCDBD431472C7C90008AC62 /* TENodeLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TENodeLoader.h; sourceTree = "<group>"; };
+		3CCDBD441472C7C90008AC62 /* TENodeLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TENodeLoader.m; sourceTree = "<group>"; };
+		3CCDBD451472C7C90008AC62 /* TEDrawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDrawable.h; sourceTree = "<group>"; };
+		3CCDBD461472C7C90008AC62 /* TEDrawable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDrawable.m; sourceTree = "<group>"; };
+		3CCDBD471472C7C90008AC62 /* TEAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEAnimation.h; sourceTree = "<group>"; };
+		3CCDBD481472C7C90008AC62 /* TEAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEAnimation.m; sourceTree = "<group>"; };
+		3CCDBD491472C7C90008AC62 /* TEScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEScaleAnimation.h; sourceTree = "<group>"; };
+		3CCDBD4A1472C7C90008AC62 /* TEScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEScaleAnimation.m; sourceTree = "<group>"; };
+		3CCDBD4B1472C7C90008AC62 /* TERotateAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TERotateAnimation.h; sourceTree = "<group>"; };
+		3CCDBD4C1472C7C90008AC62 /* TERotateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TERotateAnimation.m; sourceTree = "<group>"; };
+		3CCDBD4D1472C7C90008AC62 /* TETranslateAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TETranslateAnimation.h; sourceTree = "<group>"; };
+		3CCDBD4E1472C7C90008AC62 /* TETranslateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TETranslateAnimation.m; sourceTree = "<group>"; };
+		3CCDBD4F1472C7C90008AC62 /* TEColorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEColorAnimation.h; sourceTree = "<group>"; };
+		3CCDBD501472C7C90008AC62 /* TEColorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEColorAnimation.m; sourceTree = "<group>"; };
+		3CCDBD511472C7C90008AC62 /* TEVertexColorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEVertexColorAnimation.h; sourceTree = "<group>"; };
+		3CCDBD521472C7C90008AC62 /* TEVertexColorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEVertexColorAnimation.m; sourceTree = "<group>"; };
+		3CCDBD531472C7C90008AC62 /* TECollisionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TECollisionDetector.h; sourceTree = "<group>"; };
+		3CCDBD541472C7C90008AC62 /* TECollisionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TECollisionDetector.m; sourceTree = "<group>"; };
+		3CCDBD551472C7C90008AC62 /* TECollisionDetectorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TECollisionDetectorTest.h; sourceTree = "<group>"; };
+		3CCDBD561472C7C90008AC62 /* TECollisionDetectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TECollisionDetectorTest.m; sourceTree = "<group>"; };
+		3CCDBD571472C7C90008AC62 /* TESceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESceneController.h; sourceTree = "<group>"; };
+		3CCDBD581472C7C90008AC62 /* TESceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESceneController.m; sourceTree = "<group>"; };
+		3CCDBD591472C7C90008AC62 /* TEScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEScene.h; sourceTree = "<group>"; };
+		3CCDBD5A1472C7C90008AC62 /* TEScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEScene.m; sourceTree = "<group>"; };
+		3CCDBD5B1472C7C90008AC62 /* TEMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEMenu.h; sourceTree = "<group>"; };
+		3CCDBD5C1472C7C90008AC62 /* TEMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEMenu.m; sourceTree = "<group>"; };
+		3CCDBD5D1472C7C90008AC62 /* TEAccelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEAccelerometer.h; sourceTree = "<group>"; };
+		3CCDBD5E1472C7C90008AC62 /* TEAccelerometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEAccelerometer.m; sourceTree = "<group>"; };
+		3CCDBD5F1472C7C90008AC62 /* TESoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESoundManager.h; sourceTree = "<group>"; };
+		3CCDBD601472C7C90008AC62 /* TESoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESoundManager.m; sourceTree = "<group>"; };
+		3CCDBD611472C7C90008AC62 /* TERandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TERandom.h; sourceTree = "<group>"; };
+		3CCDBD621472C7C90008AC62 /* TERandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TERandom.m; sourceTree = "<group>"; };
+		3CCDBD631472C7C90008AC62 /* TEShuffleBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEShuffleBag.h; sourceTree = "<group>"; };
+		3CCDBD641472C7C90008AC62 /* TEShuffleBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEShuffleBag.m; sourceTree = "<group>"; };
+		3CCDBD651472C7C90008AC62 /* TEImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEImage.h; sourceTree = "<group>"; };
+		3CCDBD661472C7C90008AC62 /* TEImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEImage.m; sourceTree = "<group>"; };
+		3CCDBD671472C7C90008AC62 /* TETexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TETexture.h; sourceTree = "<group>"; };
+		3CCDBD681472C7C90008AC62 /* TETexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TETexture.m; sourceTree = "<group>"; };
+		3CCDBD981472C8090008AC62 /* TEShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEShape.h; sourceTree = "<group>"; };
+		3CCDBD991472C8090008AC62 /* TEShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEShape.m; sourceTree = "<group>"; };
+		3CCDBD9A1472C8090008AC62 /* TEPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEPolygon.h; sourceTree = "<group>"; };
+		3CCDBD9B1472C8090008AC62 /* TEPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEPolygon.m; sourceTree = "<group>"; };
+		3CCDBD9C1472C8090008AC62 /* TETriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TETriangle.h; sourceTree = "<group>"; };
+		3CCDBD9D1472C8090008AC62 /* TETriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TETriangle.m; sourceTree = "<group>"; };
+		3CCDBD9E1472C8090008AC62 /* TERectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TERectangle.h; sourceTree = "<group>"; };
+		3CCDBD9F1472C8090008AC62 /* TERectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TERectangle.m; sourceTree = "<group>"; };
+		3CCDBDA01472C8090008AC62 /* TERegularPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TERegularPolygon.h; sourceTree = "<group>"; };
+		3CCDBDA11472C8090008AC62 /* TERegularPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TERegularPolygon.m; sourceTree = "<group>"; };
+		3CCDBDA21472C8090008AC62 /* TERandomPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TERandomPolygon.h; sourceTree = "<group>"; };
+		3CCDBDA31472C8090008AC62 /* TERandomPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TERandomPolygon.m; sourceTree = "<group>"; };
+		3CCDBDA41472C8090008AC62 /* TEHexagon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEHexagon.h; sourceTree = "<group>"; };
+		3CCDBDA51472C8090008AC62 /* TEHexagon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEHexagon.m; sourceTree = "<group>"; };
+		3CCDBDA61472C8090008AC62 /* TEHeptagon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEHeptagon.h; sourceTree = "<group>"; };
+		3CCDBDA71472C8090008AC62 /* TEHeptagon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEHeptagon.m; sourceTree = "<group>"; };
+		3CCDBDA81472C8090008AC62 /* TEOctagon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEOctagon.h; sourceTree = "<group>"; };
+		3CCDBDA91472C8090008AC62 /* TEOctagon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEOctagon.m; sourceTree = "<group>"; };
+		3CCDBDAA1472C8090008AC62 /* TEEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEEllipse.h; sourceTree = "<group>"; };
+		3CCDBDAB1472C8090008AC62 /* TEEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEEllipse.m; sourceTree = "<group>"; };
+		3CCDBDC11472C8210008AC62 /* TENumberDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TENumberDisplay.h; sourceTree = "<group>"; };
+		3CCDBDC21472C8210008AC62 /* TENumberDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TENumberDisplay.m; sourceTree = "<group>"; };
+		3CCDBDC61472C8340008AC62 /* TESprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESprite.h; sourceTree = "<group>"; };
+		3CCDBDC71472C8340008AC62 /* TESprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESprite.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CCDBD101472C7520008AC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCDBD171472C7520008AC62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCDBD1F1472C7520008AC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCDBD251472C7520008AC62 /* SenTestingKit.framework in Frameworks */,
+				3CCDBD271472C7520008AC62 /* UIKit.framework in Frameworks */,
+				3CCDBD281472C7520008AC62 /* Foundation.framework in Frameworks */,
+				3CCDBD2B1472C7520008AC62 /* libTauEngine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CCDBD081472C7520008AC62 = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD181472C7520008AC62 /* TauEngine */,
+				3CCDBD2C1472C7520008AC62 /* TauEngineTests */,
+				3CCDBD151472C7520008AC62 /* Frameworks */,
+				3CCDBD141472C7520008AC62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CCDBD141472C7520008AC62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD131472C7520008AC62 /* libTauEngine.a */,
+				3CCDBD231472C7520008AC62 /* TauEngineTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CCDBD151472C7520008AC62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD161472C7520008AC62 /* Foundation.framework */,
+				3CCDBD241472C7520008AC62 /* SenTestingKit.framework */,
+				3CCDBD261472C7520008AC62 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CCDBD181472C7520008AC62 /* TauEngine */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD3D1472C7C90008AC62 /* TauEngine.h */,
+				3CCDBD3E1472C7C90008AC62 /* TauEngine.m */,
+				3CCDBD951472C7D00008AC62 /* Nodes */,
+				3CCDBD961472C7EA0008AC62 /* Drawables */,
+				3CCDBDCA1472C8400008AC62 /* Animations */,
+				3CCDBDCB1472C84C0008AC62 /* Collision Detection */,
+				3CCDBDCC1472C85D0008AC62 /* Scenes */,
+				3CCDBDCD1472C86B0008AC62 /* Motion */,
+				3CCDBDCE1472C8750008AC62 /* Sound */,
+				3CCDBDCF1472C87E0008AC62 /* Utils */,
+				3CCDBD191472C7520008AC62 /* Supporting Files */,
+			);
+			path = TauEngine;
+			sourceTree = "<group>";
+		};
+		3CCDBD191472C7520008AC62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD1A1472C7520008AC62 /* TauEngine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CCDBD2C1472C7520008AC62 /* TauEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD321472C7520008AC62 /* TauEngineTests.h */,
+				3CCDBD331472C7520008AC62 /* TauEngineTests.m */,
+				3CCDBD2D1472C7520008AC62 /* Supporting Files */,
+			);
+			path = TauEngineTests;
+			sourceTree = "<group>";
+		};
+		3CCDBD2D1472C7520008AC62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD2E1472C7520008AC62 /* TauEngineTests-Info.plist */,
+				3CCDBD2F1472C7520008AC62 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CCDBD951472C7D00008AC62 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD3F1472C7C90008AC62 /* TENode.h */,
+				3CCDBD401472C7C90008AC62 /* TENode.m */,
+				3CCDBD411472C7C90008AC62 /* TEButton.h */,
+				3CCDBD421472C7C90008AC62 /* TEButton.m */,
+				3CCDBD431472C7C90008AC62 /* TENodeLoader.h */,
+				3CCDBD441472C7C90008AC62 /* TENodeLoader.m */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		3CCDBD961472C7EA0008AC62 /* Drawables */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD451472C7C90008AC62 /* TEDrawable.h */,
+				3CCDBD461472C7C90008AC62 /* TEDrawable.m */,
+				3CCDBD971472C7F90008AC62 /* Shapes */,
+				3CCDBDC01472C80D0008AC62 /* Text */,
+				3CCDBDC51472C8260008AC62 /* Sprites */,
+			);
+			name = Drawables;
+			sourceTree = "<group>";
+		};
+		3CCDBD971472C7F90008AC62 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD981472C8090008AC62 /* TEShape.h */,
+				3CCDBD991472C8090008AC62 /* TEShape.m */,
+				3CCDBD9A1472C8090008AC62 /* TEPolygon.h */,
+				3CCDBD9B1472C8090008AC62 /* TEPolygon.m */,
+				3CCDBD9C1472C8090008AC62 /* TETriangle.h */,
+				3CCDBD9D1472C8090008AC62 /* TETriangle.m */,
+				3CCDBD9E1472C8090008AC62 /* TERectangle.h */,
+				3CCDBD9F1472C8090008AC62 /* TERectangle.m */,
+				3CCDBDA01472C8090008AC62 /* TERegularPolygon.h */,
+				3CCDBDA11472C8090008AC62 /* TERegularPolygon.m */,
+				3CCDBDA21472C8090008AC62 /* TERandomPolygon.h */,
+				3CCDBDA31472C8090008AC62 /* TERandomPolygon.m */,
+				3CCDBDA41472C8090008AC62 /* TEHexagon.h */,
+				3CCDBDA51472C8090008AC62 /* TEHexagon.m */,
+				3CCDBDA61472C8090008AC62 /* TEHeptagon.h */,
+				3CCDBDA71472C8090008AC62 /* TEHeptagon.m */,
+				3CCDBDA81472C8090008AC62 /* TEOctagon.h */,
+				3CCDBDA91472C8090008AC62 /* TEOctagon.m */,
+				3CCDBDAA1472C8090008AC62 /* TEEllipse.h */,
+				3CCDBDAB1472C8090008AC62 /* TEEllipse.m */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		3CCDBDC01472C80D0008AC62 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBDC11472C8210008AC62 /* TENumberDisplay.h */,
+				3CCDBDC21472C8210008AC62 /* TENumberDisplay.m */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		3CCDBDC51472C8260008AC62 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBDC61472C8340008AC62 /* TESprite.h */,
+				3CCDBDC71472C8340008AC62 /* TESprite.m */,
+			);
+			name = Sprites;
+			sourceTree = "<group>";
+		};
+		3CCDBDCA1472C8400008AC62 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD471472C7C90008AC62 /* TEAnimation.h */,
+				3CCDBD481472C7C90008AC62 /* TEAnimation.m */,
+				3CCDBD491472C7C90008AC62 /* TEScaleAnimation.h */,
+				3CCDBD4A1472C7C90008AC62 /* TEScaleAnimation.m */,
+				3CCDBD4B1472C7C90008AC62 /* TERotateAnimation.h */,
+				3CCDBD4C1472C7C90008AC62 /* TERotateAnimation.m */,
+				3CCDBD4D1472C7C90008AC62 /* TETranslateAnimation.h */,
+				3CCDBD4E1472C7C90008AC62 /* TETranslateAnimation.m */,
+				3CCDBD4F1472C7C90008AC62 /* TEColorAnimation.h */,
+				3CCDBD501472C7C90008AC62 /* TEColorAnimation.m */,
+				3CCDBD511472C7C90008AC62 /* TEVertexColorAnimation.h */,
+				3CCDBD521472C7C90008AC62 /* TEVertexColorAnimation.m */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		3CCDBDCB1472C84C0008AC62 /* Collision Detection */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD531472C7C90008AC62 /* TECollisionDetector.h */,
+				3CCDBD541472C7C90008AC62 /* TECollisionDetector.m */,
+				3CCDBD551472C7C90008AC62 /* TECollisionDetectorTest.h */,
+				3CCDBD561472C7C90008AC62 /* TECollisionDetectorTest.m */,
+			);
+			name = "Collision Detection";
+			sourceTree = "<group>";
+		};
+		3CCDBDCC1472C85D0008AC62 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD571472C7C90008AC62 /* TESceneController.h */,
+				3CCDBD581472C7C90008AC62 /* TESceneController.m */,
+				3CCDBD591472C7C90008AC62 /* TEScene.h */,
+				3CCDBD5A1472C7C90008AC62 /* TEScene.m */,
+				3CCDBD5B1472C7C90008AC62 /* TEMenu.h */,
+				3CCDBD5C1472C7C90008AC62 /* TEMenu.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		3CCDBDCD1472C86B0008AC62 /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD5D1472C7C90008AC62 /* TEAccelerometer.h */,
+				3CCDBD5E1472C7C90008AC62 /* TEAccelerometer.m */,
+			);
+			name = Motion;
+			sourceTree = "<group>";
+		};
+		3CCDBDCE1472C8750008AC62 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD5F1472C7C90008AC62 /* TESoundManager.h */,
+				3CCDBD601472C7C90008AC62 /* TESoundManager.m */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		3CCDBDCF1472C87E0008AC62 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3CCDBD611472C7C90008AC62 /* TERandom.h */,
+				3CCDBD621472C7C90008AC62 /* TERandom.m */,
+				3CCDBD631472C7C90008AC62 /* TEShuffleBag.h */,
+				3CCDBD641472C7C90008AC62 /* TEShuffleBag.m */,
+				3CCDBD651472C7C90008AC62 /* TEImage.h */,
+				3CCDBD661472C7C90008AC62 /* TEImage.m */,
+				3CCDBD671472C7C90008AC62 /* TETexture.h */,
+				3CCDBD681472C7C90008AC62 /* TETexture.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3CCDBD111472C7520008AC62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCDBD691472C7C90008AC62 /* TauEngine.h in Headers */,
+				3CCDBD6B1472C7C90008AC62 /* TENode.h in Headers */,
+				3CCDBD6D1472C7C90008AC62 /* TEButton.h in Headers */,
+				3CCDBD6F1472C7C90008AC62 /* TENodeLoader.h in Headers */,
+				3CCDBD711472C7C90008AC62 /* TEDrawable.h in Headers */,
+				3CCDBD731472C7C90008AC62 /* TEAnimation.h in Headers */,
+				3CCDBD751472C7C90008AC62 /* TEScaleAnimation.h in Headers */,
+				3CCDBD771472C7C90008AC62 /* TERotateAnimation.h in Headers */,
+				3CCDBD791472C7C90008AC62 /* TETranslateAnimation.h in Headers */,
+				3CCDBD7B1472C7C90008AC62 /* TEColorAnimation.h in Headers */,
+				3CCDBD7D1472C7C90008AC62 /* TEVertexColorAnimation.h in Headers */,
+				3CCDBD7F1472C7C90008AC62 /* TECollisionDetector.h in Headers */,
+				3CCDBD811472C7C90008AC62 /* TECollisionDetectorTest.h in Headers */,
+				3CCDBD831472C7C90008AC62 /* TESceneController.h in Headers */,
+				3CCDBD851472C7C90008AC62 /* TEScene.h in Headers */,
+				3CCDBD871472C7C90008AC62 /* TEMenu.h in Headers */,
+				3CCDBD891472C7C90008AC62 /* TEAccelerometer.h in Headers */,
+				3CCDBD8B1472C7C90008AC62 /* TESoundManager.h in Headers */,
+				3CCDBD8D1472C7C90008AC62 /* TERandom.h in Headers */,
+				3CCDBD8F1472C7C90008AC62 /* TEShuffleBag.h in Headers */,
+				3CCDBD911472C7C90008AC62 /* TEImage.h in Headers */,
+				3CCDBD931472C7C90008AC62 /* TETexture.h in Headers */,
+				3CCDBDAC1472C8090008AC62 /* TEShape.h in Headers */,
+				3CCDBDAE1472C8090008AC62 /* TEPolygon.h in Headers */,
+				3CCDBDB01472C8090008AC62 /* TETriangle.h in Headers */,
+				3CCDBDB21472C8090008AC62 /* TERectangle.h in Headers */,
+				3CCDBDB41472C8090008AC62 /* TERegularPolygon.h in Headers */,
+				3CCDBDB61472C8090008AC62 /* TERandomPolygon.h in Headers */,
+				3CCDBDB81472C8090008AC62 /* TEHexagon.h in Headers */,
+				3CCDBDBA1472C8090008AC62 /* TEHeptagon.h in Headers */,
+				3CCDBDBC1472C8090008AC62 /* TEOctagon.h in Headers */,
+				3CCDBDBE1472C8090008AC62 /* TEEllipse.h in Headers */,
+				3CCDBDC31472C8210008AC62 /* TENumberDisplay.h in Headers */,
+				3CCDBDC81472C8340008AC62 /* TESprite.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3CCDBD121472C7520008AC62 /* TauEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCDBD371472C7520008AC62 /* Build configuration list for PBXNativeTarget "TauEngine" */;
+			buildPhases = (
+				3CCDBD0F1472C7520008AC62 /* Sources */,
+				3CCDBD101472C7520008AC62 /* Frameworks */,
+				3CCDBD111472C7520008AC62 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TauEngine;
+			productName = TauEngine;
+			productReference = 3CCDBD131472C7520008AC62 /* libTauEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3CCDBD221472C7520008AC62 /* TauEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCDBD3A1472C7520008AC62 /* Build configuration list for PBXNativeTarget "TauEngineTests" */;
+			buildPhases = (
+				3CCDBD1E1472C7520008AC62 /* Sources */,
+				3CCDBD1F1472C7520008AC62 /* Frameworks */,
+				3CCDBD201472C7520008AC62 /* Resources */,
+				3CCDBD211472C7520008AC62 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CCDBD2A1472C7520008AC62 /* PBXTargetDependency */,
+			);
+			name = TauEngineTests;
+			productName = TauEngineTests;
+			productReference = 3CCDBD231472C7520008AC62 /* TauEngineTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CCDBD0A1472C7520008AC62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Ian Terrell";
+			};
+			buildConfigurationList = 3CCDBD0D1472C7520008AC62 /* Build configuration list for PBXProject "TauEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CCDBD081472C7520008AC62;
+			productRefGroup = 3CCDBD141472C7520008AC62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CCDBD121472C7520008AC62 /* TauEngine */,
+				3CCDBD221472C7520008AC62 /* TauEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CCDBD201472C7520008AC62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCDBD311472C7520008AC62 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CCDBD211472C7520008AC62 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CCDBD0F1472C7520008AC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCDBD6A1472C7C90008AC62 /* TauEngine.m in Sources */,
+				3CCDBD6C1472C7C90008AC62 /* TENode.m in Sources */,
+				3CCDBD6E1472C7C90008AC62 /* TEButton.m in Sources */,
+				3CCDBD701472C7C90008AC62 /* TENodeLoader.m in Sources */,
+				3CCDBD721472C7C90008AC62 /* TEDrawable.m in Sources */,
+				3CCDBD741472C7C90008AC62 /* TEAnimation.m in Sources */,
+				3CCDBD761472C7C90008AC62 /* TEScaleAnimation.m in Sources */,
+				3CCDBD781472C7C90008AC62 /* TERotateAnimation.m in Sources */,
+				3CCDBD7A1472C7C90008AC62 /* TETranslateAnimation.m in Sources */,
+				3CCDBD7C1472C7C90008AC62 /* TEColorAnimation.m in Sources */,
+				3CCDBD7E1472C7C90008AC62 /* TEVertexColorAnimation.m in Sources */,
+				3CCDBD801472C7C90008AC62 /* TECollisionDetector.m in Sources */,
+				3CCDBD821472C7C90008AC62 /* TECollisionDetectorTest.m in Sources */,
+				3CCDBD841472C7C90008AC62 /* TESceneController.m in Sources */,
+				3CCDBD861472C7C90008AC62 /* TEScene.m in Sources */,
+				3CCDBD881472C7C90008AC62 /* TEMenu.m in Sources */,
+				3CCDBD8A1472C7C90008AC62 /* TEAccelerometer.m in Sources */,
+				3CCDBD8C1472C7C90008AC62 /* TESoundManager.m in Sources */,
+				3CCDBD8E1472C7C90008AC62 /* TERandom.m in Sources */,
+				3CCDBD901472C7C90008AC62 /* TEShuffleBag.m in Sources */,
+				3CCDBD921472C7C90008AC62 /* TEImage.m in Sources */,
+				3CCDBD941472C7C90008AC62 /* TETexture.m in Sources */,
+				3CCDBDAD1472C8090008AC62 /* TEShape.m in Sources */,
+				3CCDBDAF1472C8090008AC62 /* TEPolygon.m in Sources */,
+				3CCDBDB11472C8090008AC62 /* TETriangle.m in Sources */,
+				3CCDBDB31472C8090008AC62 /* TERectangle.m in Sources */,
+				3CCDBDB51472C8090008AC62 /* TERegularPolygon.m in Sources */,
+				3CCDBDB71472C8090008AC62 /* TERandomPolygon.m in Sources */,
+				3CCDBDB91472C8090008AC62 /* TEHexagon.m in Sources */,
+				3CCDBDBB1472C8090008AC62 /* TEHeptagon.m in Sources */,
+				3CCDBDBD1472C8090008AC62 /* TEOctagon.m in Sources */,
+				3CCDBDBF1472C8090008AC62 /* TEEllipse.m in Sources */,
+				3CCDBDC41472C8210008AC62 /* TENumberDisplay.m in Sources */,
+				3CCDBDC91472C8340008AC62 /* TESprite.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCDBD1E1472C7520008AC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCDBD341472C7520008AC62 /* TauEngineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CCDBD2A1472C7520008AC62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CCDBD121472C7520008AC62 /* TauEngine */;
+			targetProxy = 3CCDBD291472C7520008AC62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CCDBD2F1472C7520008AC62 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CCDBD301472C7520008AC62 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CCDBD351472C7520008AC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3CCDBD361472C7520008AC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CCDBD381472C7520008AC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/TauEngine.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TauEngine/TauEngine-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3CCDBD391472C7520008AC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/TauEngine.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TauEngine/TauEngine-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3CCDBD3B1472C7520008AC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TauEngine/TauEngine-Prefix.pch";
+				INFOPLIST_FILE = "TauEngineTests/TauEngineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3CCDBD3C1472C7520008AC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TauEngine/TauEngine-Prefix.pch";
+				INFOPLIST_FILE = "TauEngineTests/TauEngineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CCDBD0D1472C7520008AC62 /* Build configuration list for PBXProject "TauEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCDBD351472C7520008AC62 /* Debug */,
+				3CCDBD361472C7520008AC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCDBD371472C7520008AC62 /* Build configuration list for PBXNativeTarget "TauEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCDBD381472C7520008AC62 /* Debug */,
+				3CCDBD391472C7520008AC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCDBD3A1472C7520008AC62 /* Build configuration list for PBXNativeTarget "TauEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCDBD3B1472C7520008AC62 /* Debug */,
+				3CCDBD3C1472C7520008AC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CCDBD0A1472C7520008AC62 /* Project object */;
+}
