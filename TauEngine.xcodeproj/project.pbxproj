@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C728802151631D600100C66 /* TECollisionDetectorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C728801151631D600100C66 /* TECollisionDetectorTestCase.m */; };
+		3C7288071516342400100C66 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7288051516342400100C66 /* GLKit.framework */; };
+		3C7288081516342400100C66 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7288061516342400100C66 /* OpenGLES.framework */; };
+		3C7288091516343900100C66 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7288051516342400100C66 /* GLKit.framework */; };
+		3C72880A1516343900100C66 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7288061516342400100C66 /* OpenGLES.framework */; };
 		3CCDBD171472C7520008AC62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCDBD161472C7520008AC62 /* Foundation.framework */; };
 		3CCDBD251472C7520008AC62 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCDBD241472C7520008AC62 /* SenTestingKit.framework */; };
 		3CCDBD271472C7520008AC62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCDBD261472C7520008AC62 /* UIKit.framework */; };
@@ -38,8 +43,6 @@
 		3CCDBD7E1472C7C90008AC62 /* TEVertexColorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD521472C7C90008AC62 /* TEVertexColorAnimation.m */; };
 		3CCDBD7F1472C7C90008AC62 /* TECollisionDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD531472C7C90008AC62 /* TECollisionDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CCDBD801472C7C90008AC62 /* TECollisionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD541472C7C90008AC62 /* TECollisionDetector.m */; };
-		3CCDBD811472C7C90008AC62 /* TECollisionDetectorTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD551472C7C90008AC62 /* TECollisionDetectorTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CCDBD821472C7C90008AC62 /* TECollisionDetectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD561472C7C90008AC62 /* TECollisionDetectorTest.m */; };
 		3CCDBD831472C7C90008AC62 /* TESceneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD571472C7C90008AC62 /* TESceneController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CCDBD841472C7C90008AC62 /* TESceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCDBD581472C7C90008AC62 /* TESceneController.m */; };
 		3CCDBD851472C7C90008AC62 /* TEScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDBD591472C7C90008AC62 /* TEScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -95,6 +98,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C728800151631D600100C66 /* TECollisionDetectorTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TECollisionDetectorTestCase.h; sourceTree = "<group>"; };
+		3C728801151631D600100C66 /* TECollisionDetectorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TECollisionDetectorTestCase.m; sourceTree = "<group>"; };
+		3C7288051516342400100C66 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3C7288061516342400100C66 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		3CCDBD131472C7520008AC62 /* libTauEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTauEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCDBD161472C7520008AC62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3CCDBD1A1472C7520008AC62 /* TauEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TauEngine-Prefix.pch"; sourceTree = "<group>"; };
@@ -129,8 +136,6 @@
 		3CCDBD521472C7C90008AC62 /* TEVertexColorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEVertexColorAnimation.m; sourceTree = "<group>"; };
 		3CCDBD531472C7C90008AC62 /* TECollisionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TECollisionDetector.h; sourceTree = "<group>"; };
 		3CCDBD541472C7C90008AC62 /* TECollisionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TECollisionDetector.m; sourceTree = "<group>"; };
-		3CCDBD551472C7C90008AC62 /* TECollisionDetectorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TECollisionDetectorTest.h; sourceTree = "<group>"; };
-		3CCDBD561472C7C90008AC62 /* TECollisionDetectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TECollisionDetectorTest.m; sourceTree = "<group>"; };
 		3CCDBD571472C7C90008AC62 /* TESceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESceneController.h; sourceTree = "<group>"; };
 		3CCDBD581472C7C90008AC62 /* TESceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESceneController.m; sourceTree = "<group>"; };
 		3CCDBD591472C7C90008AC62 /* TEScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEScene.h; sourceTree = "<group>"; };
@@ -180,6 +185,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7288071516342400100C66 /* GLKit.framework in Frameworks */,
+				3C7288081516342400100C66 /* OpenGLES.framework in Frameworks */,
 				3CCDBD171472C7520008AC62 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +195,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7288091516343900100C66 /* GLKit.framework in Frameworks */,
+				3C72880A1516343900100C66 /* OpenGLES.framework in Frameworks */,
 				3CCDBD251472C7520008AC62 /* SenTestingKit.framework in Frameworks */,
 				3CCDBD271472C7520008AC62 /* UIKit.framework in Frameworks */,
 				3CCDBD281472C7520008AC62 /* Foundation.framework in Frameworks */,
@@ -198,6 +207,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C7288041516329D00100C66 /* Collision Detection */ = {
+			isa = PBXGroup;
+			children = (
+				3C728800151631D600100C66 /* TECollisionDetectorTestCase.h */,
+				3C728801151631D600100C66 /* TECollisionDetectorTestCase.m */,
+			);
+			name = "Collision Detection";
+			sourceTree = "<group>";
+		};
 		3CCDBD081472C7520008AC62 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +238,8 @@
 		3CCDBD151472C7520008AC62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C7288051516342400100C66 /* GLKit.framework */,
+				3C7288061516342400100C66 /* OpenGLES.framework */,
 				3CCDBD161472C7520008AC62 /* Foundation.framework */,
 				3CCDBD241472C7520008AC62 /* SenTestingKit.framework */,
 				3CCDBD261472C7520008AC62 /* UIKit.framework */,
@@ -258,6 +278,7 @@
 			children = (
 				3CCDBD321472C7520008AC62 /* TauEngineTests.h */,
 				3CCDBD331472C7520008AC62 /* TauEngineTests.m */,
+				3C7288041516329D00100C66 /* Collision Detection */,
 				3CCDBD2D1472C7520008AC62 /* Supporting Files */,
 			);
 			path = TauEngineTests;
@@ -366,8 +387,6 @@
 			children = (
 				3CCDBD531472C7C90008AC62 /* TECollisionDetector.h */,
 				3CCDBD541472C7C90008AC62 /* TECollisionDetector.m */,
-				3CCDBD551472C7C90008AC62 /* TECollisionDetectorTest.h */,
-				3CCDBD561472C7C90008AC62 /* TECollisionDetectorTest.m */,
 			);
 			name = "Collision Detection";
 			sourceTree = "<group>";
@@ -437,7 +456,6 @@
 				3CCDBD7B1472C7C90008AC62 /* TEColorAnimation.h in Headers */,
 				3CCDBD7D1472C7C90008AC62 /* TEVertexColorAnimation.h in Headers */,
 				3CCDBD7F1472C7C90008AC62 /* TECollisionDetector.h in Headers */,
-				3CCDBD811472C7C90008AC62 /* TECollisionDetectorTest.h in Headers */,
 				3CCDBD831472C7C90008AC62 /* TESceneController.h in Headers */,
 				3CCDBD851472C7C90008AC62 /* TEScene.h in Headers */,
 				3CCDBD871472C7C90008AC62 /* TEMenu.h in Headers */,
@@ -572,7 +590,6 @@
 				3CCDBD7C1472C7C90008AC62 /* TEColorAnimation.m in Sources */,
 				3CCDBD7E1472C7C90008AC62 /* TEVertexColorAnimation.m in Sources */,
 				3CCDBD801472C7C90008AC62 /* TECollisionDetector.m in Sources */,
-				3CCDBD821472C7C90008AC62 /* TECollisionDetectorTest.m in Sources */,
 				3CCDBD841472C7C90008AC62 /* TESceneController.m in Sources */,
 				3CCDBD861472C7C90008AC62 /* TEScene.m in Sources */,
 				3CCDBD881472C7C90008AC62 /* TEMenu.m in Sources */,
@@ -602,6 +619,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CCDBD341472C7520008AC62 /* TauEngineTests.m in Sources */,
+				3C728802151631D600100C66 /* TECollisionDetectorTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
