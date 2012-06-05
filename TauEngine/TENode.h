@@ -25,7 +25,7 @@
   
   NSMutableArray *currentAnimations;
   
-  TENode *parent;
+  __weak TENode *parent;
   NSMutableArray *children;
   
   BOOL remove;
@@ -46,7 +46,7 @@
 @property(strong, nonatomic) NSString *name;
 @property(strong, nonatomic) TEDrawable *drawable;
 @property(readonly) TEShape *shape;
-@property(strong, nonatomic) TENode *parent;
+@property(weak, nonatomic) TENode *parent;
 @property float maxVelocity, maxAcceleration, maxAngularVelocity, maxAngularAcceleration;
 @property BOOL remove;
 @property BOOL collide;
